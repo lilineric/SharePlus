@@ -1,0 +1,9 @@
+C:\Users\shori_000\OneDrive\Documents\MyApps\VsPackages\SharePlus\SharePlus\SharePlus_IntegrationTests\bin\Debug\SharePlus_IntegrationTests.dll
+C:\Users\shori_000\OneDrive\Documents\MyApps\VsPackages\SharePlus\SharePlus\SharePlus_IntegrationTests\bin\Debug\SharePlus_IntegrationTests.pdb
+C:\Users\shori_000\OneDrive\Documents\MyApps\VsPackages\SharePlus\SharePlus\SharePlus_IntegrationTests\bin\Debug\Microsoft.VSSDK.TestHostFramework.dll
+C:\Users\shori_000\OneDrive\Documents\MyApps\VsPackages\SharePlus\SharePlus\SharePlus_IntegrationTests\bin\Debug\SharePlus.dll
+C:\Users\shori_000\OneDrive\Documents\MyApps\VsPackages\SharePlus\SharePlus\SharePlus_IntegrationTests\bin\Debug\SharePlus.pdb
+C:\Users\shori_000\OneDrive\Documents\MyApps\VsPackages\SharePlus\SharePlus\SharePlus_IntegrationTests\bin\Debug\Microsoft.VSSDK.TestHostFramework.pdb
+C:\Users\shori_000\OneDrive\Documents\MyApps\VsPackages\SharePlus\SharePlus\SharePlus_IntegrationTests\obj\Debug\SharePlus_IntegrationTests.csprojResolveAssemblyReference.cache
+C:\Users\shori_000\OneDrive\Documents\MyApps\VsPackages\SharePlus\SharePlus\SharePlus_IntegrationTests\obj\Debug\SharePlus_IntegrationTests.dll
+C:\Users\shori_000\OneDrive\Documents\MyApps\VsPackages\SharePlus\SharePlus\SharePlus_IntegrationTests\obj\Debug\SharePlus_IntegrationTests.pdb
