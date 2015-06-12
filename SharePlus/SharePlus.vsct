@@ -48,13 +48,13 @@
           <CommandName>Share Plus</CommandName>
         </Strings>
       </Menu>
-      <Menu guid="guidSharePlisContextMenuCmdSet" id="menuSvn" priority="0x0100" type="Menu">
+      <!--<Menu guid="guidSharePlisContextMenuCmdSet" id="menuSvn" priority="0x0100" type="Menu">
         <Parent guid="guidSharePlisContextMenuCmdSet" id="ContextMenuGroup"/>
         <Strings>
           <ButtonText>SVN</ButtonText>
           <CommandName>SVN</CommandName>
         </Strings>
-      </Menu>
+      </Menu>-->
     </Menus>
 
 
@@ -71,9 +71,9 @@
       <Group guid="guidSharePlisContextMenuCmdSet" id="ContextMenuGroup" priority="0x0600">
         <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_ITEMNODE"/>
       </Group>
-      <Group guid="guidSharePlisContextMenuCmdSet" id="groupSvn" priority="0x0600">
+      <!--<Group guid="guidSharePlisContextMenuCmdSet" id="groupSvn" priority="0x0600">
         <Parent guid="guidSharePlisContextMenuCmdSet" id="menuSvn"/>
-      </Group>
+      </Group>-->
 
     </Groups>
 
@@ -91,6 +91,24 @@
         </Strings>
       </Button>
 
+      <Button guid="guidSharePlusCmdSet" id="cmdidOpenExplore" priority="0x0000" type="Button">
+        <Parent guid="guidSharePlusCmdSet" id="groupInsertTodo" />
+        <Icon guid="guidImages" id="bmpPic1" />
+        <Strings>
+          <CommandName>cmdidOpenExplore</CommandName>
+          <ButtonText>在资源管理器中打开</ButtonText>
+        </Strings>
+      </Button>
+      
+      <!--<Button guid="guidSharePlisContextMenuCmdSet" id="cmdidSvnUpdate" priority="0x0100" type="Button">
+        <Parent guid="guidSharePlisContextMenuCmdSet" id="groupSvn" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <Strings>
+          <CommandName>cmdidSvnUpdate</CommandName>
+          <ButtonText>Update</ButtonText>
+        </Strings>
+      </Button>
+      
       <Button guid="guidSharePlisContextMenuCmdSet" id="cmdidSvnCommit" priority="0x0100" type="Button">
         <Parent guid="guidSharePlisContextMenuCmdSet" id="groupSvn" />
         <CommandFlag>DynamicVisibility</CommandFlag>
@@ -100,14 +118,14 @@
         </Strings>
       </Button>
 
-      <Button guid="guidSharePlisContextMenuCmdSet" id="cmdidSvnUpdate" priority="0x0100" type="Button">
+      <Button guid="guidSharePlisContextMenuCmdSet" id="cmdidSvnAddCommit" priority="0x0100" type="Button">
         <Parent guid="guidSharePlisContextMenuCmdSet" id="groupSvn" />
         <CommandFlag>DynamicVisibility</CommandFlag>
         <Strings>
-          <CommandName>cmdidSvnUpdate</CommandName>
-          <ButtonText>Update</ButtonText>
+          <CommandName>cmdidSvnAddCommit</CommandName>
+          <ButtonText>AddAndCommit</ButtonText>
         </Strings>
-      </Button>
+      </Button>-->
 
 
     </Buttons>
@@ -128,6 +146,8 @@
   <KeyBindings>
     <KeyBinding guid="guidSharePlusCmdSet" id="cmdidInsertTodoCmmand"
         key1="L" key2="T" mod1="Control" mod2="Control" editor="guidVSStd97" />
+    <KeyBinding guid="guidSharePlusCmdSet" id="cmdidOpenExplore"
+       key1="L" key2="O" mod1="Control" mod2="Control" editor="guidVSStd97" />
   </KeyBindings>
 
 
@@ -145,15 +165,17 @@
       <IDSymbol name="menuInsertTodo" value="0x1100"/>
       <IDSymbol name="groupInsertTodo" value="0x1150"/>
       <IDSymbol name="cmdidInsertTodoCmmand" value="0x0105"/>
+      <IDSymbol name="cmdidOpenExplore" value="0x0106"/>
 
     </GuidSymbol>
 
     <GuidSymbol name="guidSharePlisContextMenuCmdSet" value="{43744006-b60d-47e5-bd0b-a60ebdfd7dbd}">
       <IDSymbol name="ContextMenuGroup" value="0x1022" />
-      <IDSymbol name="groupSvn" value="0x0239"/>
+      <!--<IDSymbol name="groupSvn" value="0x0239"/>
       <IDSymbol name="menuSvn" value="0x1872"/>
       <IDSymbol name="cmdidSvnCommit" value="0x0201" />
       <IDSymbol name="cmdidSvnUpdate" value="0x0202" />
+      <IDSymbol name="cmdidSvnAddCommit" value="0x0203" />-->
     </GuidSymbol>
 
 

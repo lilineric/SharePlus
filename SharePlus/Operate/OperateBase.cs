@@ -11,6 +11,14 @@ namespace Shoring.SharePlus.Operate
     {
         protected DTE dte;
 
+        public Document CurrentDocument
+        {
+            get
+            {
+                return dte.ActiveDocument;
+            }
+        }
+
         public OperateBase(DTE dte)
         {
             this.dte = dte;

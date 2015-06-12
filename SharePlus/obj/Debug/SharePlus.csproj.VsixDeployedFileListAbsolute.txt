@@ -1,4 +1,5 @@
 C:\Users\shori_000\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Shoring\SharePlus\1.0\\SharePlus.dll
+C:\Users\shori_000\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Shoring\SharePlus\1.0\\Share.dll
 C:\Users\shori_000\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Shoring\SharePlus\1.0\\SharePlus.pkgdef
 C:\Users\shori_000\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Shoring\SharePlus\1.0\\extension.vsixmanifest
 C:\Users\shori_000\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Shoring\SharePlus\1.0\\SharePlus.pdb

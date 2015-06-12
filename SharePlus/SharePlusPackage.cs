@@ -61,7 +61,7 @@ namespace Shoring.SharePlus
             Debug.WriteLine(string.Format(CultureInfo.CurrentCulture, "Entering Initialize() of: {0}", this.ToString()));
             base.Initialize();
 
-
+            IVsUIShell uiShell = (IVsUIShell)GetService(typeof(SVsUIShell));
 
             // Add our command handlers for menu (commands must exist in the .vsct file)
             OleMenuCommandService mcs = GetService(typeof(IMenuCommandService)) as OleMenuCommandService;
@@ -72,11 +72,17 @@ namespace Shoring.SharePlus
                 AddMenuCommand(mcs, new EditorPlus(dte).InsertTodoCallback, 
                     GuidList.guidSharePlusCmdSet, PkgCmdIDList.cmdidInsertTodoCmmand);
 
-                AddMenuCommand(mcs, new SvnPlus(dte).CommitCallback,
-                    GuidList.guidSharePlisContextMenuCmdSet, PkgCmdIDList.cmdidSvnCommit);
+                AddMenuCommand(mcs, new EditorPlus(dte).OpenExplore,
+                   GuidList.guidSharePlusCmdSet, PkgCmdIDList.cmdidOpenExplore);
 
-                AddMenuCommand(mcs, new SvnPlus(dte).UpdateCallback,
-                    GuidList.guidSharePlisContextMenuCmdSet, PkgCmdIDList.cmdidSvnUpdate);
+                //AddMenuCommand(mcs, new SvnPlus(dte, uiShell).CommitCallback,
+                //    GuidList.guidSharePlisContextMenuCmdSet, PkgCmdIDList.cmdidSvnCommit);
+
+                //AddMenuCommand(mcs, new SvnPlus(dte, uiShell).UpdateCallback,
+                //    GuidList.guidSharePlisContextMenuCmdSet, PkgCmdIDList.cmdidSvnUpdate);
+
+                //AddMenuCommand(mcs, new SvnPlus(dte, uiShell).AddAndCommitCallback,
+                //    GuidList.guidSharePlisContextMenuCmdSet, PkgCmdIDList.cmdidSvnAddCommit);
             }
         }
 

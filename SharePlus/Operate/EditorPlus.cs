@@ -9,22 +9,30 @@ namespace Shoring.SharePlus.Operate
 {
     internal class EditorPlus : OperateBase
     {
-        public EditorPlus(DTE dte)
+        internal EditorPlus(DTE dte)
             : base(dte)
         {
 
         }
 
-        public void InsertTodoCallback(object sender, EventArgs e)
+        internal void InsertTodoCallback(object sender, EventArgs e)
         {
-            var activeDocument = dte.ActiveDocument;
-            if (activeDocument == null)
+            if (CurrentDocument == null)
             {
                 return;
             }
 
-            var selection = activeDocument.Selection as TextSelection;
+            var selection = CurrentDocument.Selection as TextSelection;
             selection.Insert(@"//TODO:");
+        }
+
+        internal void OpenExplore(object sender, EventArgs e)
+        {
+            if (CurrentDocument == null)
+            {
+                return;
+            }
+            System.Diagnostics.Process.Start("Explorer.exe", " /select," + CurrentDocument.Path + CurrentDocument.Name);
         }
     }
 }
