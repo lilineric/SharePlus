@@ -10,6 +10,7 @@ namespace Shoring.SharePlus
 
         public const uint cmdidInsertTodoCmmand = 0x0105;
         public const uint cmdidOpenExplore = 0x0106;
+        public const uint cmidGeneratePropety = 0x0107;
 
         //public const uint cmdidSvnCommit = 0x0201;
         //public const uint cmdidSvnUpdate = 0x0202;

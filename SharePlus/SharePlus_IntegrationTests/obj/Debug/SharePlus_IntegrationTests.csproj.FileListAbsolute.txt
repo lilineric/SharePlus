@@ -7,3 +7,14 @@ C:\Users\shori_000\OneDrive\Documents\MyApps\VsPackages\SharePlus\SharePlus\Shar
 C:\Users\shori_000\OneDrive\Documents\MyApps\VsPackages\SharePlus\SharePlus\SharePlus_IntegrationTests\obj\Debug\SharePlus_IntegrationTests.csprojResolveAssemblyReference.cache
 C:\Users\shori_000\OneDrive\Documents\MyApps\VsPackages\SharePlus\SharePlus\SharePlus_IntegrationTests\obj\Debug\SharePlus_IntegrationTests.dll
 C:\Users\shori_000\OneDrive\Documents\MyApps\VsPackages\SharePlus\SharePlus\SharePlus_IntegrationTests\obj\Debug\SharePlus_IntegrationTests.pdb
+D:\Data\Documents\GitSpace\Project\SharePlus\SharePlus\SharePlus_IntegrationTests\bin\Debug\SharePlus_IntegrationTests.dll
+D:\Data\Documents\GitSpace\Project\SharePlus\SharePlus\SharePlus_IntegrationTests\bin\Debug\SharePlus_IntegrationTests.pdb
+D:\Data\Documents\GitSpace\Project\SharePlus\SharePlus\SharePlus_IntegrationTests\bin\Debug\Microsoft.VSSDK.TestHostFramework.dll
+D:\Data\Documents\GitSpace\Project\SharePlus\SharePlus\SharePlus_IntegrationTests\bin\Debug\SharePlus.dll
+D:\Data\Documents\GitSpace\Project\SharePlus\SharePlus\SharePlus_IntegrationTests\bin\Debug\Share.dll
+D:\Data\Documents\GitSpace\Project\SharePlus\SharePlus\SharePlus_IntegrationTests\bin\Debug\SharePlus.pdb
+D:\Data\Documents\GitSpace\Project\SharePlus\SharePlus\SharePlus_IntegrationTests\bin\Debug\Microsoft.VSSDK.TestHostFramework.pdb
+D:\Data\Documents\GitSpace\Project\SharePlus\SharePlus\SharePlus_IntegrationTests\bin\Debug\Share.pdb
+D:\Data\Documents\GitSpace\Project\SharePlus\SharePlus\SharePlus_IntegrationTests\obj\Debug\SharePlus_IntegrationTests.csprojResolveAssemblyReference.cache
+D:\Data\Documents\GitSpace\Project\SharePlus\SharePlus\SharePlus_IntegrationTests\obj\Debug\SharePlus_IntegrationTests.dll
+D:\Data\Documents\GitSpace\Project\SharePlus\SharePlus\SharePlus_IntegrationTests\obj\Debug\SharePlus_IntegrationTests.pdb

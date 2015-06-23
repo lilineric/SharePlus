@@ -99,6 +99,15 @@
           <ButtonText>在资源管理器中打开</ButtonText>
         </Strings>
       </Button>
+
+      <Button guid="guidSharePlusCmdSet" id="cmidGeneratePropety" priority="0x0000" type="Button">
+        <Parent guid="guidSharePlusCmdSet" id="groupInsertTodo" />
+        <Icon guid="guidImages" id="bmpPic1" />
+        <Strings>
+          <CommandName>cmidGeneratePropety</CommandName>
+          <ButtonText>生成属性</ButtonText>
+        </Strings>
+      </Button>
       
       <!--<Button guid="guidSharePlisContextMenuCmdSet" id="cmdidSvnUpdate" priority="0x0100" type="Button">
         <Parent guid="guidSharePlisContextMenuCmdSet" id="groupSvn" />
@@ -148,6 +157,8 @@
         key1="L" key2="T" mod1="Control" mod2="Control" editor="guidVSStd97" />
     <KeyBinding guid="guidSharePlusCmdSet" id="cmdidOpenExplore"
        key1="L" key2="O" mod1="Control" mod2="Control" editor="guidVSStd97" />
+    <KeyBinding guid="guidSharePlusCmdSet" id="cmidGeneratePropety"
+       key1="L" key2="G" mod1="Control" mod2="Control" editor="guidVSStd97" />
   </KeyBindings>
 
 
@@ -166,7 +177,7 @@
       <IDSymbol name="groupInsertTodo" value="0x1150"/>
       <IDSymbol name="cmdidInsertTodoCmmand" value="0x0105"/>
       <IDSymbol name="cmdidOpenExplore" value="0x0106"/>
-
+      <IDSymbol name="cmidGeneratePropety" value="0x0107"/>
     </GuidSymbol>
 
     <GuidSymbol name="guidSharePlisContextMenuCmdSet" value="{43744006-b60d-47e5-bd0b-a60ebdfd7dbd}">

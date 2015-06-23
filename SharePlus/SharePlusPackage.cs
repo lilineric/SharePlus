@@ -10,6 +10,8 @@ using Microsoft.VisualStudio.OLE.Interop;
 using Microsoft.VisualStudio.Shell;
 using EnvDTE;
 using Shoring.SharePlus.Operate;
+using Microsoft.VisualStudio.Text.Editor;
+using System.ComponentModel.Composition;
 
 namespace Shoring.SharePlus
 {
@@ -46,8 +48,7 @@ namespace Shoring.SharePlus
             Debug.WriteLine(string.Format(CultureInfo.CurrentCulture, "Entering constructor for: {0}", this.ToString()));
         }
 
-
-
+     
         /////////////////////////////////////////////////////////////////////////////
         // Overridden Package Implementation
         #region Package Members
@@ -68,16 +69,18 @@ namespace Shoring.SharePlus
             if (null != mcs)
             {
                 var dte = (DTE)Package.GetGlobalService(typeof(DTE));
-
+                
                 AddMenuCommand(mcs, new EditorPlus(dte).InsertTodoCallback, 
                     GuidList.guidSharePlusCmdSet, PkgCmdIDList.cmdidInsertTodoCmmand);
 
                 AddMenuCommand(mcs, new EditorPlus(dte).OpenExplore,
                    GuidList.guidSharePlusCmdSet, PkgCmdIDList.cmdidOpenExplore);
+                
 
+                AddMenuCommand(mcs, new EditorPlus(dte).CenerateProperty,
+                   GuidList.guidSharePlusCmdSet, PkgCmdIDList.cmidGeneratePropety);
                 //AddMenuCommand(mcs, new SvnPlus(dte, uiShell).CommitCallback,
                 //    GuidList.guidSharePlisContextMenuCmdSet, PkgCmdIDList.cmdidSvnCommit);
-
                 //AddMenuCommand(mcs, new SvnPlus(dte, uiShell).UpdateCallback,
                 //    GuidList.guidSharePlisContextMenuCmdSet, PkgCmdIDList.cmdidSvnUpdate);
 
