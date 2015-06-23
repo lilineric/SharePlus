@@ -77,7 +77,7 @@ namespace Shoring.SharePlus
                    GuidList.guidSharePlusCmdSet, PkgCmdIDList.cmdidOpenExplore);
                 
 
-                AddMenuCommand(mcs, new EditorPlus(dte).CenerateProperty,
+                AddMenuCommand(mcs, new EditorPlus(dte).GenerateProperty,
                    GuidList.guidSharePlusCmdSet, PkgCmdIDList.cmidGeneratePropety);
                 //AddMenuCommand(mcs, new SvnPlus(dte, uiShell).CommitCallback,
                 //    GuidList.guidSharePlisContextMenuCmdSet, PkgCmdIDList.cmdidSvnCommit);

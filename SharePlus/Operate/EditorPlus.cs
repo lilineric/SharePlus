@@ -36,7 +36,7 @@ namespace Shoring.SharePlus.Operate
             System.Diagnostics.Process.Start("Explorer.exe", " /select," + CurrentDocument.Path + CurrentDocument.Name);
         }
 
-        internal void CenerateProperty(object sender, EventArgs e)
+        internal void GenerateProperty(object sender, EventArgs e)
         {
             var selection = dte.ActiveDocument.Selection as TextSelection;
             if (selection.IsEmpty)
