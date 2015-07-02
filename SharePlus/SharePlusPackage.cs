@@ -79,6 +79,8 @@ namespace Shoring.SharePlus
 
                 AddMenuCommand(mcs, new EditorPlus(dte).GenerateProperty,
                    GuidList.guidSharePlusCmdSet, PkgCmdIDList.cmidGeneratePropety);
+
+                AddMenuCommand(mcs, new EditorPlus(dte, uiShell).Commit, GuidList.guidSharePlusCmdSet, PkgCmdIDList.cmidCommit);
                 //AddMenuCommand(mcs, new SvnPlus(dte, uiShell).CommitCallback,
                 //    GuidList.guidSharePlisContextMenuCmdSet, PkgCmdIDList.cmdidSvnCommit);
                 //AddMenuCommand(mcs, new SvnPlus(dte, uiShell).UpdateCallback,

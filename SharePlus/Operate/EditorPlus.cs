@@ -6,14 +6,19 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Share.Extension;
+using Shoring.SharePlus.Util;
+using Microsoft.VisualStudio.Shell.Interop;
 
 namespace Shoring.SharePlus.Operate
 {
     internal class EditorPlus : OperateBase
     {
-        internal EditorPlus(DTE dte)
+        IVsUIShell uiShell = null;
+
+        internal EditorPlus(DTE dte, IVsUIShell vsUiShell = null)
             : base(dte)
         {
+            uiShell = vsUiShell;
         }
 
         internal void InsertTodoCallback(object sender, EventArgs e)
@@ -101,6 +106,22 @@ public {keyword} {name}
                 selection.SelectAll();
                 selection.SmartFormat();
             }
+        }
+
+        internal void Commit(object sender, EventArgs e)
+        {
+            if (CurrentDocument == null)
+            {
+                return;
+            }
+            Share.Command cmd = new Share.Command( errorReceived: (x) =>
+            {
+                if (!string.IsNullOrEmpty(x))
+                {
+                    MessageBox.Show(uiShell, x); 
+                }
+            });
+            cmd.Excute("svn commit -m 'commit' " + CurrentDocument.Path + CurrentDocument.Name);
         }
     }
 }
